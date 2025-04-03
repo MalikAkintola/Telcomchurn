@@ -49,6 +49,17 @@ SELECT
     CAST(SUM(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*) AS DECIMAL(10,2)) AS Churn_Rate_Percentage
 FROM customer;
 ```
+#### 📊 Query Result:
+| Total Customers | Churned Customers | Churn Rate (%) |
+|----------------|------------------|----------------|
+| 7,043         | 1,869            | 26.54          |
+
+
+- Out of **7,043** total customers, **1,869** have churned, resulting in a **26.54% churn rate**.
+- This means that **approximately 1 in 4 customers** leave the service.
+
+I would now focus on **identifying the key factors** contributing to churn and implementing **retention strategies** to improve customer loyalty.
+## 
 
 2.	Find the percentage of customers who churned based on gender.
 ```sql
@@ -60,6 +71,16 @@ SELECT
 FROM customer
 GROUP BY gender
 ```
+#### 📊 Query Result:
+| Gender | Total Customers | Churned Customers | Churn Rate (%) |
+|--------|-----------------|-------------------|----------------|
+| Male   | 3,555           | 930               | 26.16%         |
+| Female | 3,488           | 939               | 26.92%         |
+
+
+- The **churn rate** for **Female customers** (26.92%) is slightly higher than for **Male customers** (26.16%).
+- The difference is small but suggests that **Female customers** may be slightly more likely to churn.
+##
 
 3.	Analyze the churn rate based on senior citizen status.
 ```sql
@@ -75,6 +96,20 @@ SELECT
 FROM customer
 GROUP BY seniorcitizen
 ```
+#### 📊 Query Result:
+| Citizen Status      | Total Customers | Churned Customers | Churn Rate (%) |
+|--------------------|----------------|-------------------|----------------|
+| Senior Citizen    | 1,142           | 476               | 41.68%         |
+| Non-Senior Citizen | 5,901           | 1,393             | 23.61%         |
+
+#### 🔍 Insight:
+- **Senior Citizens have a much higher churn rate (41.68%)** compared to **Non-Senior Citizens (23.61%)**.
+- This suggests that older customers might be facing **service-related issues**, **pricing concerns**, or **technological challenges** leading to higher attrition.
+- The company could consider:
+  - **Senior-friendly customer support** to assist with tech-related concerns.
+  - **Discounted plans or loyalty programs** for older customers.
+  - **Personalized engagement strategies** to improve retention among this group.
+##
 
 4.	Determine the average tenure of customers who churned versus those who stayed.
 ```sql
