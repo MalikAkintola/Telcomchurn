@@ -261,33 +261,14 @@ ORDER BY Churn_Rate_Percentage DESC;
 ```
 
 
-## 📊 Visualization
-To complement the SQL analysis, we visualized key insights using **Power BI**:
-- **Churn Rate by Contract Type**: A bar chart shows that **month-to-month contracts** have the highest churn.
-- **Churn Rate by Payment Method**: A pie chart highlights that **electronic check users** churn at a higher rate.
-- **Churn Rate by Internet Service Type**: A stacked bar chart shows that **fiber optic users churn more** compared to DSL users.
 
 ## 📌 Recommendations
 Based on the analysis, the following strategies could help reduce churn:
-- **Encourage long-term contracts**: Offering discounts for annual or two-year contracts may help reduce churn.
-- **Improve Fiber Optic service**: Investigate why fiber optic customers leave more frequently and address potential service issues.
-- **Educate customers on payment options**: Providing incentives for bank transfers or auto-pay setups may reduce churn.
-- **Enhance tech support services**: Customers with tech support churn less, so investing in better support could improve retention.
 
 ## 🚀 Future Work
 - Implement **predictive modeling** using machine learning to identify high-risk churn customers.
 - Conduct **A/B testing** on retention strategies to measure effectiveness.
 - Expand the dataset with customer feedback to gain more qualitative insights.
 
-## 💡 Technologies Used
-- **SQL** for data querying and analysis
-- **Power BI** for data visualization
-- **Python (Pandas, Seaborn, Matplotlib)** for advanced analytics (future work)
-
-## 🏆 Conclusion
-This project provides a **data-driven approach** to understanding customer churn in the telecom industry. By leveraging SQL and visualization tools, we identified key factors influencing churn and proposed actionable insights to improve retention rates.
 
 ---
-📝 **Author:** Malik Akintola  
-📅 **Date:** April 2025  
-📌 **Repository:** [GitHub Link Here]  
