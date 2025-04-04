@@ -1,6 +1,5 @@
-# Telcomchurn
-
 # Telco Customer Churn Analysis
+![Churn data](churn.jpg) 
 
 ## Problem Statement
 A telecom company is experiencing customer churn, leading to revenue loss and increased customer acquisition costs. You have been tasked as a data analyst to analyze customer demographics, billing patterns, and service usage to uncover key drivers of churn. The insights you generate will help the company develop targeted strategies to improve customer retention and reduce churn rates.
